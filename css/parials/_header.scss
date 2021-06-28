@@ -1,0 +1,87 @@
+        // rules colors
+        $first-color: #0b060f;
+        $secondary-color:rgb(103, 117, 177);
+        // rules fonts 
+        $mainfont: 'Open Sans',
+        sans-serif;
+        //  classes placehold
+        .none {
+            text-decoration: none;
+            list-style: none;
+            border: none;
+            background: none;
+            outline: none;
+        }
+        
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        // style top bar our name&list
+        .uppper-bar {
+            width: 100%;
+            position: relative;
+            .navbar {
+                background-color: $first-color;
+                font-family: $mainfont;
+                @extend .flex;
+                .brand {
+                    margin-right: 5%;
+                    cursor: pointer;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        margin: -10px 10px 5px;
+                    }
+                    h1 {
+                        color: $secondary-color;
+                        display: inline-block;
+                        span {
+                            color: #fff;
+                        }
+                    }
+                }
+                .links-list {
+                    @extend .none;
+                    font-family: $mainfont;
+                    ul.links {
+                        display: flex;
+                        li {
+                            padding: 10px 15px 0;
+                            list-style: none;
+                            i.fas {
+                                padding: 5px;
+                                color: #ccc;
+                                cursor: pointer;
+                                &:hover {
+                                    color: #333;
+                                }
+                            }
+                            a {
+                                color: #fff;
+                                font-size: 17px;
+                                &:hover {
+                                    color: $secondary-color;
+                                }
+                            }
+                            button {
+                                @extend .none;
+                            }
+                            .news {
+                                display: none;
+                            }
+                            .show {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }

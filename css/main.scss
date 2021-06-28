@@ -1,0 +1,11 @@
+@import 'parials/_header.scss';
+@import 'parials/_card.scss';
+@import 'parials/_footer.scss';
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
