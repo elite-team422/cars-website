@@ -24,10 +24,84 @@ a {
     text-decoration: none;
 }
 
+main, .main
+{
+    background-color: #0a1e31;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    background-color: #111;
+    margin: 20px 30px;
+    z-index: 500;
+}
+
+.box::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ /* background: linear-gradient(45deg, #ffbc00, #ff0058); */
+    background: linear-gradient(220deg, #0a58ca, #6c757d, #0a58ca, #6c757d);
+}
+
+.box::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ /* background: linear-gradient(45deg, #ffbc00, #ff0058); */
+    background: linear-gradient(45deg, #e9ecef, #0a58ca, #e9ecef, #0a58ca);
+    filter: blur(13px);
+/* filter: blur(7px);
+   filter: blur(30px); */
+}
+
+.box span
+{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.box span::before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+    
+}
+
+.box .content
+{
+    position: relative;
+    z-index: 10;
+}
 
 
 
 
+/* Start Master Page */
 /* Start Header */
 .uppper-bar {
     width: 100%;
@@ -116,188 +190,6 @@ a {
     display: block;
 }
 /* End Header */
-
-
-
-
-
-/* Start cards */
-.cards
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #0a1e31;
-    text-align: center;
-}
-
-.cards .box
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 320px;
-    height: 428px;
-    color: #fff;
-    cursor: pointer;
-    background-color: #111;
-    margin: 20px 30px;
-    transition: 0.5s;
-    z-index: 500;
-}
-
-.cards .box:hover
-{
-    transform: translateY(-20px);
-}
-
-.cards .box::before
-{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
- /* background: linear-gradient(45deg, #ffbc00, #ff0058); */
-    background: linear-gradient(220deg, #0a58ca, #6c757d, #0a58ca, #6c757d);
-}
-
-.cards .box::after
-{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
- /* background: linear-gradient(45deg, #ffbc00, #ff0058); */
-    background: linear-gradient(45deg, #e9ecef, #0a58ca, #e9ecef, #0a58ca);
-    filter: blur(13px);
-/* filter: blur(7px);
-   filter: blur(30px); */
-}
-
-.cards .box span
-{
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 2;
-}
-
-.cards .box span::before
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.cards .box .content
-{
-    position: relative;
-    z-index: 10;
-}
-
-.cards .box .content img
-{
-    width: 100%;
-    height: 10rem;
-}
-
-.cards .box .content h2
-{
-    font-size: 1.8em;
-    color: #fff;
-}
-
-.cards .box .content p
-{
-    height: 5rem;
-    font-size: 1.1em;
-    color: #fff;
-    line-height: 1.1;
-}
-
-.cards .box .content .card-link
-{
-    display: inline-block;
-    font-size: 1.4em;
-    color: #111;
-    background-color: #fff;
-    padding: 10px;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.cards .box .content h2, p, h6, .card-link
-{
-    margin: 10px 0;    
-}
-
-.cards .box .content .window-overlay
-{
- /* position: absolute;
-    top: -36%;
-    left: -220%;
-    top: -35%;
-    left: 42%; */
-    display: none;
-    height: 90vh;
-    width: 270%;
-    border: 2px solid;
-    background-color: brown;
-    z-index: 1000;
-}
-
-.cards .box .content .window-overlay #windowHeader
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    height: 85px;
-}
-
-.cards .box .content .window-overlay #windowHeader .logo
-{
-    width: 35%;
-    height: 45px;
-    margin-left: -80px;
-}
-
-/* Style The Buttons */
-.cards .box .content .window-overlay #windowHeader .btn
-{
-    border: none;
-    outline: none;
-    padding: 5px 16px;
-    background-color: #f1f1f1;
-}
-
-.cards .box .content .window-overlay #windowHeader .btn:hover
-{
-    background-color: #ddd;
-}
-
-.cards .box .content .window-overlay #windowHeader .btn.active
-{
-    background-color: #666;
-    color: white;
-}
-/* End cards */
-
-
-
-
 
 /* Start Footer */
 footer .footer-top
@@ -422,3 +314,152 @@ footer .segment-three
    padding-bottom: 15px;
 }
 /* End Footer */
+/* End Master Page */
+
+
+
+
+
+/* Start Cars Valuation */
+/* Start cards */
+.cards
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.cards .box
+{
+    cursor: pointer;
+    transition: 0.5s;
+    width: 320px;
+    height: 428px;
+}
+
+.cards .box:hover
+{
+    transform: translateY(-20px);
+}
+
+.cards .box .content .image
+{
+    width: 104.3%;
+    position: relative;
+    top: -6.4px;
+    left: -6px;
+}
+
+.cards .box .content img
+{
+    width: 100%;
+    height: 9.5rem;
+}
+
+.cards .box .content h2
+{
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.cards .box .content p
+{
+    margin: 1rem 0;
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 1.1;
+}
+
+.cards .box .content .card-link
+{
+    display: inline-block;
+    font-size: 1.4em;
+    color: #111;
+    background-color: #fff;
+    padding: 10px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cards .box .content h2, p, h6, .card-link
+{
+    margin: 10px 0;    
+}
+
+/* End cards */
+
+/* Start Articles Cars */
+article section .content
+{
+    padding: 20px 0;
+}
+
+article section .content h1
+{
+    margin: 18px 0 20px 0;
+}
+
+article section .content h2
+{
+    margin: 30px 0 20px 0;
+    color: #7ca4e0;
+    font-weight: bold;
+}
+
+article section .content .wrapper
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+article section .content .wrapper .single-img
+{
+    width: 172px;
+    height: 145px;
+    border: 5px solid #ccc;
+    margin: 10px 6px;
+    transition: 1s;
+}
+
+article section .content .wrapper .single-img img
+{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: .5s;
+}
+
+/* article section .content .wrapper .single-img img:hover
+{
+    transform: scale(1.3);
+    z-index: 2;
+    box-shadow: 0px 2px 20px #fff;
+    width: 200%;
+    height: 200%;
+
+}
+
+article section .content .wrapper .single-img:hover img
+{
+    opacity: 1;
+} */
+
+section .content li
+{
+    color: #cfdce8;
+    font-size: 17px;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 15px 0;
+    width: 96%;
+}
+/* End Articles Cars */
+/* Start Cars Valuation */
+
+
+
+
+

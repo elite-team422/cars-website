@@ -17,6 +17,9 @@
     <!-- link style css -->
     <!-- <link rel="stylesheet" href="css/main.css"> -->
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
       <!-- link goolge fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
@@ -60,9 +63,6 @@
                             Contact
                         </a>
                     </li>
-                    <li>
-                        <a href="# "></a>
-                    </li>
                 </ul>
             </div>
         </nav>
@@ -71,462 +71,138 @@
 
 
     <!-- Start card -->
-    <div class="cards">
+    <main class="cards">
         <div class="container">
             <div class="row py-5">
-                <div class="box">
+                <section class="box">
                     <span></span>
                     <div class="content">
-                        <img src="./images/images-cars/Hyundai/Hyundai-Palisade/Hyundai-Palisade-2021-4.jpg" alt="img-car">
-                        <h2>Hyundai Palisade</h5>
+                        <div class="image">
+                            <img src="./images/images-cars/Hyundai/Hyundai-Palisade/Hyundai-Palisade-2021-4.jpg" alt="img-car">
+                        </div>
+                        <h2>Hyundai Palisade</h2>
                         <p>The Palisade is powered by a 3.8-liter V-6. Coupled to an eight-speed automatic transmission, the engine's 291 horsepower.</p>
                         <h6>$47,750 Dollar</h6>
-                        <button id="show" onclick="hhh()" class="card-link">Read More</button>
-                        <div id="myWindow" class="hidden window-overlay">
-                            <div id="windowHeader">
-                                <img src="" class="logo">
-                                <button class="btn active" onclick="filterSelection('engine')">Engine</button>
-                                <button class="btn" onclick="filterSelection('performance')">Performance</button>
-                                <button class="btn" onclick="filterSelection('safety')">Safety</button>
-                                <button class="btn" onclick="filterSelection('videos')">Videos</button>
-                                <button class="btn" onclick="filterSelection('gallery')">Gallery</button>
-                                <span class="close">&times;</span>
-                            </div>
-
-                            <div class="window-body">
-                                <div class="filterDiv engine">
-                                    <h1>Engine</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv performance">
-                                    <h1>Performance</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv safety">
-                                    <h1>Safety</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv videos">
-                                    <h1>Videos</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv gallery">
-                                    <h1>Gallery</h1>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>    
+                        <button id="show" class="card-link"><a href="articles/car_article_1.html">Read More</a></button> 
                     </div>
-                </div>
+                </section>
 
-                <div class="box">
+                <section class="box">
                     <span></span>
                     <div class="content">
-                        <img src="./images/images-cars/Hyundai/Hyundai-Tucson/Hyundai-Tucson-6.jpg" alt="img-car">
-                        <h2>Hyundai Tucson</h5>
+                        <div class="image">
+                            <img src="./images/images-cars/Hyundai/Hyundai-Tucson/Hyundai-Tucson-6.jpg" alt="img-car">
+                        </div>
+                        <h2>Hyundai Tucson</h2>
                         <p>With a quick flick of the switch, you can adjust the powertrain to suit challenging road and weather conditions: SNOW.</p>
                         <h6>$23,700 - $32,050 Dollar</h6>
                         <button id="show" onclick="hhh()" class="card-link">Read More</button>
-                        <div id="myWindow" class="hidden window-overlay">
-                            <div id="windowHeader">
-                                <img src="" class="logo">
-                                <button class="btn active" onclick="filterSelection('engine')">Engine</button>
-                                <button class="btn" onclick="filterSelection('performance')">Performance</button>
-                                <button class="btn" onclick="filterSelection('safety')">Safety</button>
-                                <button class="btn" onclick="filterSelection('videos')">Videos</button>
-                                <button class="btn" onclick="filterSelection('gallery')">Gallery</button>
-                                <span class="close">&times;</span>
-                            </div>
-
-                            <div class="window-body">
-                                <div class="filterDiv engine">
-                                    <h1>Engine</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv performance">
-                                    <h1>Performance</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv safety">
-                                    <h1>Safety</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv videos">
-                                    <h1>Videos</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv gallery">
-                                    <h1>Gallery</h1>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="box">
+                <section class="box">
                     <span></span>
                     <div class="content">
-                        <img src="./images/images-cars/Lexus/lexus-es/lexus-es-2021-3.jpg" alt="img-car">
-                        <h2>lexus es</h5>
+                        <div class="image">
+                            <img src="./images/images-cars/Lexus/lexus-es/lexus-es-2021-3.jpg" alt="img-car">
+                        </div>
+                        <h2>lexus es</h2>
                         <p>Auto-Braking Technology Helps Protect You While Parking By Stopping The Vehicle To Avoid A Potential Collision.</p>
                         <h6>$47,315 Dollar</h6>
                         <button id="show" onclick="hhh()" class="card-link">Read More</button>
-                        <div id="myWindow" class="hidden window-overlay">
-                            <div id="windowHeader">
-                                <img src="" class="logo">
-                                <button class="btn active" onclick="filterSelection('engine')">Engine</button>
-                                <button class="btn" onclick="filterSelection('performance')">Performance</button>
-                                <button class="btn" onclick="filterSelection('safety')">Safety</button>
-                                <button class="btn" onclick="filterSelection('videos')">Videos</button>
-                                <button class="btn" onclick="filterSelection('gallery')">Gallery</button>
-                                <span class="close">&times;</span>
-                            </div>
-
-                            <div class="window-body">
-                                <div class="filterDiv engine">
-                                    <h1>Engine</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv performance">
-                                    <h1>Performance</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv safety">
-                                    <h1>Safety</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv videos">
-                                    <h1>Videos</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv gallery">
-                                    <h1>Gallery</h1>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="box">
+                <section class="box">
                     <span></span>
                     <div class="content">
-                        <img src="./images/images-cars/Lexus/Lexus-LX/Lexus-LX-1.jpg" alt="img-car">
-                        <h2>Lexus LX</h5>
+                        <div class="image">
+                            <img src="./images/images-cars/Lexus/Lexus-LX/Lexus-LX-1.jpg" alt="img-car">
+                        </div>
+                        <h2>Lexus LX</h2>
                         <p>Intuitive Parking Assist utilizes sensors integrated into the front and rear bumpers to help with routine tasks like parallel parking.</p>
                         <h6>$86,730 Dollar</h6>
                         <button id="show" onclick="hhh()" class="card-link">Read More</button>
-                        <div id="myWindow" class="hidden window-overlay">
-                            <div id="windowHeader">
-                                <img src="" class="logo">
-                                <button class="btn active" onclick="filterSelection('engine')">Engine</button>
-                                <button class="btn" onclick="filterSelection('performance')">Performance</button>
-                                <button class="btn" onclick="filterSelection('safety')">Safety</button>
-                                <button class="btn" onclick="filterSelection('videos')">Videos</button>
-                                <button class="btn" onclick="filterSelection('gallery')">Gallery</button>
-                                <span class="close">&times;</span>
-                            </div>
-
-                            <div class="window-body">
-                                <div class="filterDiv engine">
-                                    <h1>Engine</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv performance">
-                                    <h1>Performance</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv safety">
-                                    <h1>Safety</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv videos">
-                                    <h1>Videos</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv gallery">
-                                    <h1>Gallery</h1>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>    
                     </div>
-                </div>
+                </section>
 
-                <div class="box">
+                <section class="box">
                     <span></span>
                     <div class="content">
-                        <img src="./images/images-cars/Lexus/Lexus-UX-200/Lexus-UX-200-2021-2.jpg" alt="img-car">
-                        <h2>Lexus UX</h5>
+                        <div class="image">
+                            <img src="./images/images-cars/Lexus/Lexus-UX-200/Lexus-UX-200-2021-2.jpg" alt="img-car">
+                        </div>
+                        <h2>Lexus UX</h2>
                         <p>Using Only Your Voice, You Can Easily Access Thousands Of The Same Functions You Get With Alexa at Home. </p>
                         <h6>$33,495 Dollar</h6>
                         <button id="show" onclick="hhh()" class="card-link">Read More</button>
-                        <div id="myWindow" class="hidden window-overlay">
-                            <div id="windowHeader">
-                                <img src="" class="logo">
-                                <button class="btn active" onclick="filterSelection('engine')">Engine</button>
-                                <button class="btn" onclick="filterSelection('performance')">Performance</button>
-                                <button class="btn" onclick="filterSelection('safety')">Safety</button>
-                                <button class="btn" onclick="filterSelection('videos')">Videos</button>
-                                <button class="btn" onclick="filterSelection('gallery')">Gallery</button>
-                                <span class="close">&times;</span>
-                            </div>
-
-                            <div class="window-body">
-                                <div class="filterDiv engine">
-                                    <h1>Engine</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv performance">
-                                    <h1>Performance</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv safety">
-                                    <h1>Safety</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv videos">
-                                    <h1>Videos</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv gallery">
-                                    <h1>Gallery</h1>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>    
                     </div>
-                </div>
+                </section>
 
-                <div class="box">
+                <section class="box">
                     <span></span>
                     <div class="content">
-                        <img src="./images/images-cars/Lamborghini/Lamborghini-Urus/Lamborghini-Urus-6.jpg" alt="img-car">
-                        <h2>Lamborghini Urus</h5>
+                        <div class="image">
+                            <img src="./images/images-cars/Lamborghini/Lamborghini-Urus/Lamborghini-Urus-6.jpg" alt="img-car">
+                        </div>
+                        <h2>Lamborghini Urus</h2>
                         <p>The Lamborghini Urus is built on the Volkswagen Group’s MLB Evo platform, also used in the Audi Q8, the Bentley Bentayga.</p>
                         <h6>$222,004 Dollar</h6>
                         <button id="show" onclick="hhh()" class="card-link">Read More</button>
-                        <div id="myWindow" class="hidden window-overlay">
-                            <div id="windowHeader">
-                                <img src="" class="logo">
-                                <button class="btn active" onclick="filterSelection('engine')">Engine</button>
-                                <button class="btn" onclick="filterSelection('performance')">Performance</button>
-                                <button class="btn" onclick="filterSelection('safety')">Safety</button>
-                                <button class="btn" onclick="filterSelection('videos')">Videos</button>
-                                <button class="btn" onclick="filterSelection('gallery')">Gallery</button>
-                                <span class="close">&times;</span>
-                            </div>
-
-                            <div class="window-body">
-                                <div class="filterDiv engine">
-                                    <h1>Engine</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv performance">
-                                    <h1>Performance</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv safety">
-                                    <h1>Safety</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv videos">
-                                    <h1>Videos</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv gallery">
-                                    <h1>Gallery</h1>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>    
                     </div>
-                </div>
+                </section>
 
-                <div class="box">
+                <section class="box">
                     <span></span>
                     <div class="content">
-                        <img src="./images/images-cars/land-rover/range-rover-evoque/range-rover-evoque-3.jpg" alt="img-car">
-                        <h2>Range Rover Evoque</h5>
+                        <div class="image">
+                            <img src="./images/images-cars/land-rover/range-rover-evoque/range-rover-evoque-3.jpg" alt="img-car">
+                        </div>
+                        <h2>Range Rover Evoque</h2>
                         <p>Most models can be configured with full-speed automatic emergency braking, which comes with blind-spot monitors and adaptive cruise control.</p>
                         <h6>$43,300 Dollar</h6>
                         <button id="show" onclick="hhh()" class="card-link">Read More</button>
-                        <div id="myWindow" class="hidden window-overlay">
-                            <div id="windowHeader">
-                                <img src="" class="logo">
-                                <button class="btn active" onclick="filterSelection('engine')">Engine</button>
-                                <button class="btn" onclick="filterSelection('performance')">Performance</button>
-                                <button class="btn" onclick="filterSelection('safety')">Safety</button>
-                                <button class="btn" onclick="filterSelection('videos')">Videos</button>
-                                <button class="btn" onclick="filterSelection('gallery')">Gallery</button>
-                                <span class="close">&times;</span>
-                            </div>
-
-                            <div class="window-body">
-                                <div class="filterDiv engine">
-                                    <h1>Engine</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv performance">
-                                    <h1>Performance</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv safety">
-                                    <h1>Safety</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv videos">
-                                    <h1>Videos</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv gallery">
-                                    <h1>Gallery</h1>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>    
                     </div>
-                </div>
+                </section>
 
-                <div class="box">
+                <section class="box">
                     <span></span>
                     <div class="content">
-                        <img src="./images/images-cars/mercedes/mercedes-benz-gla-250/mercedes-benz-gla-2.jpg" alt="img-car">
-                        <h2>mercedes benz gla</h5>
+                        <div class="image">
+                            <img src="./images/images-cars/mercedes/mercedes-benz-gla-250/mercedes-benz-gla-2.jpg" alt="img-car">
+                        </div>
+                        <h2>mercedes benz gla</h2>
                         <p>Vehicle exit warning (alerts drivers when vehicles or cyclists are approaching from behind as the doors are being opened.</p>
                         <h6>$36,230 Dollar</h6>
                         <button id="show" onclick="hhh()" class="card-link">Read More</button>
-                        <div id="myWindow" class="hidden window-overlay">
-                            <div id="windowHeader">
-                                <img src="" class="logo">
-                                <button class="btn active" onclick="filterSelection('engine')">Engine</button>
-                                <button class="btn" onclick="filterSelection('performance')">Performance</button>
-                                <button class="btn" onclick="filterSelection('safety')">Safety</button>
-                                <button class="btn" onclick="filterSelection('videos')">Videos</button>
-                                <button class="btn" onclick="filterSelection('gallery')">Gallery</button>
-                                <span class="close">&times;</span>
-                            </div>
-
-                            <div class="window-body">
-                                <div class="filterDiv engine">
-                                    <h1>Engine</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv performance">
-                                    <h1>Performance</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv safety">
-                                    <h1>Safety</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv videos">
-                                    <h1>Videos</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv gallery">
-                                    <h1>Gallery</h1>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>    
                     </div>
-                </div>
+                </section>
 
-                <div class="box">
+                <section class="box">
                     <span></span>
                     <div class="content">
-                        <img src="./images/images-cars/Toyota-Corolla/toyota-corolla-2021/toyota-corolla-6.jpg" alt="img-car">
-                        <h2>Toyota Corolla</h5>
+                        <div class="image">
+                            <img src="./images/images-cars/Toyota-Corolla/toyota-corolla-2021/toyota-corolla-6.jpg" alt="img-car">
+                        </div>
+                        <h2>Toyota Corolla</h2>
                         <p>Active safety features are designed to help protect you and your passengers from harm as well as offer peace of mind to your onboard drive.</p>
                         <h6>$20,025 - $28,310  Dollar</h6>
                         <button id="show" onclick="hhh()" class="card-link">Read More</button>
-                        <div id="myWindow" class="hidden window-overlay">
-                            <div id="windowHeader">
-                                <img src="" class="logo">
-                                <button class="btn active" onclick="filterSelection('engine')">Engine</button>
-                                <button class="btn" onclick="filterSelection('performance')">Performance</button>
-                                <button class="btn" onclick="filterSelection('safety')">Safety</button>
-                                <button class="btn" onclick="filterSelection('videos')">Videos</button>
-                                <button class="btn" onclick="filterSelection('gallery')">Gallery</button>
-                                <span class="close">&times;</span>
-                            </div>
-
-                            <div class="window-body">
-                                <div class="filterDiv engine">
-                                    <h1>Engine</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv performance">
-                                    <h1>Performance</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv safety">
-                                    <h1>Safety</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv videos">
-                                    <h1>Videos</h1>
-                                    <p></p>
-                                </div>
-
-                                <div class="filterDiv gallery">
-                                    <h1>Gallery</h1>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>    
                     </div>
-                </div>
+                </section>
             </div>
         </div>
-    </div>
+    </main>
     <!-- End card -->
 
 
-    <!--		start footer  -->
+    <!-- start footer -->
    <footer>
     <div class="footer-top">
        <div class="container">
           <div class="row">
              <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
-                <h3>About us</h3>
+                <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae libero laborum iusto, laboriosam reprehenderit at.</p>
              </div>
              <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
@@ -559,7 +235,7 @@
        </div>
     </div>
  </footer>
- <!--		end footer  -->
+ <!-- end footer -->
 
 
 
@@ -570,9 +246,16 @@
 
     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+
+    <!-- jquery File -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+
     <!-- link local bootstrap5 -->
     <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js "></script>
     <!-- JavaScript Bundle with Popper -->
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js " integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU " crossorigin="anonymous "></script>
     <!-- our method with js -->
